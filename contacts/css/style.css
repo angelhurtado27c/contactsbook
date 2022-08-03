@@ -1,0 +1,307 @@
+@import url(../../assets/css/standard.css);
+
+
+
+
+.content {
+	max-width: 1040px;
+	width: 100%;
+	margin: auto;
+	padding: 20px;
+	padding-top: 0;
+}
+
+
+
+
+/* --- --- Header --- --- */
+
+header {
+	background-color: var(--colorB);
+	position: fixed;
+	z-index: 1;
+	max-width: 1000px;
+	width: calc( 100% - 40px );
+	top: 0;
+}
+
+nav {
+	text-align: right;
+	padding: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+header div {
+	background-color: var(--colorA);
+	height: 20px;
+	border-radius: 7px 7px 0 0;
+}
+
+
+
+
+/* --- --- --- Contacts --- --- --- */
+
+#\$imgLoading {
+	display: block;
+	margin: auto;
+	height: 40px;
+	animation: loading .6s linear infinite;
+}
+
+@keyframes loading {
+	to { transform: rotate( 360deg ); }
+}
+
+#\$contacts {
+	margin-top: 58px;
+	padding: 20px;
+	background-color: var(--colorA);
+}
+
+#\$contacts > div {
+	display: flex;
+	border-bottom: solid 1px white;
+	padding: 0;
+	position: relative;
+}
+
+#\$contacts > div:hover {
+	background-color: var(--colorD);
+	border-radius: 7px;
+	border-bottom: solid 1px #00000000;
+}
+
+.update {
+	padding: 9px 0 !important;
+}
+
+.update:hover {
+	background-color: transparent !important;
+	border-bottom: solid 1px white !important;
+	border-radius: 0 !important;
+}
+
+p {
+	padding: 20px 0;
+	margin: 0 14px;
+	color: white;
+	width: 100%;
+	overflow: auto;
+}
+
+#\$contacts form {
+	background-color: transparent;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-top: solid 1px transparent;
+}
+
+#\$contacts [type="email"] {
+	width: calc( 100% - 80px );
+}
+
+
+
+
+/* --- --- Delete --- --- */
+
+.contactDelete {
+	background-color: var(--colorD);
+}
+
+.contactDelete:hover {
+	border-bottom: solid 1px white !important;
+	border-radius: 7px 7px 0 0 !important;
+}
+
+#\$delete {
+	border-radius: 7px;
+	box-shadow: 0 0 15px white;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	transition: all .3s ease;
+}
+
+button {
+	background-color: var(--colorC);
+	padding: 10px 14px;
+	border-radius: 7px;
+	font-size: 16px;
+	transition: all .3s ease;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: white;
+	color: var(--colorB);
+}
+
+.delete {
+	background-color: var(--colorD);
+}
+
+.disappear {
+	animation: disappear .3s ease 1 forwards;
+}
+
+@keyframes disappear {
+	to { transform: scaleX(0); }
+}
+
+
+
+
+/* --- --- form  --- --- */
+
+form {
+	display: flex;
+	padding: 20px;
+	padding-top: 0;
+	background-color: var(--colorA);
+	border-radius: 0 0 7px 7px;
+}
+
+form > * {
+	width: 100%;
+}
+
+input {
+	margin: 0;
+}
+
+input:invalid {
+	border-radius: 0;
+}
+
+form [type=text]:invalid {
+	border-radius: 7px 0 0 7px;
+}
+
+#\$contacts form div {
+	padding: 0;
+}
+
+input::placeholder {
+	position: relative;
+	z-index: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] { -moz-appearance: textfield; }
+
+.end {
+	display: flex;
+}
+
+#\$addForm [type=email] {
+	width: calc( 100% - 56px );
+}
+
+[type=submit] {
+	border-radius: 0 7px 7px 0;
+	width: auto;
+}
+
+
+
+
+@media screen and (max-width: 680px) {
+	#\$contacts {
+		/*border-radius: 7px;*/
+		border-bottom: solid 3px var(--colorD);
+	}
+
+	#\$contacts div {
+		flex-flow: column;
+		padding: 20px 0 10px 0;
+	}
+
+	p {
+		padding: 0 0 10px 0;
+		width: calc(100% - 40px);
+	}
+
+	.empty {
+		display: none;
+	}
+
+	.update {
+		padding: 20px 0 10px 0 !important;
+	}
+
+	#\$contacts form {
+		margin-bottom: 10px;
+	}
+
+	#\$contacts input,
+	#\$contacts [type=email] {
+		width: calc( 100% - 20px );
+	}
+
+	#\$contacts [type=submit] {
+		margin: 0 auto;
+		border-radius: 7px;
+	}
+
+
+
+
+	form {
+		/*margin-top: 20px;*/
+		padding: 0;
+		padding-top: 20px;
+		border-radius: 0 0 7px 7px;
+	}
+
+	form,
+	.end {
+		display: block;
+	}
+
+	input {
+		width: calc( 100% - 40px );
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	#\$addForm [type=email] { width: calc( 100% - 40px ); }
+
+	input:invalid {
+		border-radius: 7px !important;
+	}
+
+	[type=submit] {
+		border-radius: 0 0 7px 7px;
+		width: 100%;
+		margin: 0;
+	}
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+	header {
+		width: calc( 100% - 20px );
+	}
+
+	.content {
+		padding: 0 10px 20px 10px;
+	}
+}

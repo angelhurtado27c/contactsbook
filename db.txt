@@ -1,0 +1,59 @@
+﻿CREATE DATABASE contacsbook;
+
+
+
+
+SHOW DATABASES;
+
+
+
+
+USE contacsbook;
+
+
+
+
+CREATE TABLE user (
+	id			SMALLINT UNSIGNED	NOT NULL	AUTO_INCREMENT	PRIMARY KEY,
+	email		char (40)			NOT NULL,
+	pass		char (18)			NOT NULL,
+	name		char (20)			NOT NULL,
+	last_name	char (20)			NOT NULL
+);
+
+
+
+
+CREATE TABLE contact (
+	id				SMALLINT UNSIGNED	NOT NULL	AUTO_INCREMENT	PRIMARY KEY,
+	id_user			SMALLINT UNSIGNED	NOT NULL,
+	phone_number	INT UNSIGNED		NOT NULL,
+	name			CHAR (40)			NOT NULL,
+	email			CHAR (40)
+);
+
+
+
+
+ALTER TABLE contact ADD
+FOREIGN KEY (id_user)
+REFERENCES user (id);
+
+
+
+
+INSERT INTO user
+	( email, pass, name, last_name )
+VALUES
+	(
+		"hurtadogad@gmail.com",
+		"213",
+		"Ángel David",
+		"Hurtado García"
+	)
+;
+
+
+
+
+ALTER TABLE user ADD UNIQUE (id, email);

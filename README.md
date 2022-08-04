@@ -11,7 +11,7 @@ Este proyecto propone solucionar dicho problema, reemplazando todos estos botone
 <br><br>
 
 ## Instrucciones
-Lo puedes usar desde http://contactsbook.rf.gd/ o descargando el repositorio y creando la base de datos como se indica en ./db.txt ejecutando el archivo index.html
+Lo puedes usar desde https://contactsbook.rf.gd o descargando el repositorio y creando la base de datos como se indica en ./db.txt ejecutando el archivo index.html
 
 **PD** Debes tener PHP y MySQL instalados ;D
 

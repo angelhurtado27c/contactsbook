@@ -11,8 +11,11 @@ Este proyecto propone solucionar dicho problema, reemplazando todos estos botone
 <br><br>
 
 ## Instrucciones
-Lo puedes usar desde https://contactsbook.rf.gd o descargando el repositorio y creando la base de datos como se indica en ./db.txt ejecutando el archivo index.html
 
-**PD** Debes tener PHP y MySQL instalados ;D
+Lo puedes usar desde https://contactsbook.rf.gd con el usuario de pruebas:
+* **Usuario** ```prueba@gmail.com```
+* **Contraseña** ```passprueba```
+
+o registrándote en el sitio. También puedes descargar el repositorio y crear la base de datos como se indica en ./db.txt y ejecutando el index.php (debes tener PHP y MySQL instalados).
 
 <br><br>

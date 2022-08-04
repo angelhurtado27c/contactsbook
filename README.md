@@ -16,6 +16,6 @@ Lo puedes usar desde https://contactsbook.rf.gd con el usuario de pruebas:
 * **Usuario** ```prueba@gmail.com```
 * **Contraseña** ```passprueba```
 
-o registrándote en el sitio. También puedes descargar el repositorio y crear la base de datos como se indica en ./db.txt y ejecutando el index.php (debes tener PHP y MySQL instalados).
+o registrándote en el sitio. También puedes descargar el repositorio y crear la base de datos como se indica en ./db.txt y ejecutando el archivo index.php (debes tener PHP y MySQL instalados).
 
 <br><br>
